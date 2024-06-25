@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    background: #000;
+}
+header{
+    background: url("img/header.jpg") no-repeat center center / cover;
+    height: 600px;
+}
+.container{
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/* ======================================== HEADER ====================================*/
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px 10px;
+}
+.header-nav img{
+    width: 60px;
+}
+.header-nav button{
+    border: none;
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.content-grid{
+    display: grid;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #fff;
+    gap: 10px;
+}
+.grid img{
+    width: 250px;
+    padding: 10px 10px;
+}
+.grid h1{
+    font-size: 12px;
+    color: #14a33a;
+    padding: 20px 10px;
+}
+.grid p{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+.grid button{
+    width: 250px;
+    padding: 8px 10px;
+    background: #14a33a;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.container a{
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+}
+.container p{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.container i{
+    font-size: 45px;
+    font-weight: 200;
+    color: #fff;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+.sub-links{
+    padding: 20px 10px;
+    font-size: 10px;
+    color: #828583;
+}
+.links{
+    padding: 10px 10px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all ease 100ms;
+}
+.links:hover{
+    color: #14a33a;
+}
+@media only screen and (max-width: 550px){
+    .grid button{
+        width: 200px;
+    }
+    .grid img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 440px){
+    .grid button{
+        width: 100px;
+        font-size: 10px;
+    }
+    .grid img{
+        width: 120px;
+        padding: 5px 10px;
+    }
+    .grid h1{
+        font-size: 10px;
+    }
+    .grid p{
+        font-size: 14px;
+    }
+}
+
+/* ==================================== SUB HEADER ======================================*/
+.sub-header{
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #0E5214, black);
+}
+.sub-header h2{
+    font-size: 18px;
+    padding: 10px 10px;
+    font-weight: 500;
+}
+.sub-header button{
+    width: 250px;
+    padding: 10px 10px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.sub-header button:hover{
+    background: #dedcdc;
+    color: #000;
+}
+
+/* =================================== MOVIES CATEGORIES ===================================*/
+.movies-covers{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 10px;
+}
+.movies-content h2{
+    font-size: 12px;
+    color: #14a33a;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+.movies-content h3{
+    text-transform: capitalize;
+    font-size: 40px;
+    padding: 10px 10px;
+}
+.movies-content p{
+    font-size: 13px;
+    padding: 10px 10px;
+}
+.covers-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+.covers-1{
+    background: url("img/cover-1.jpg") no-repeat center center / cover;
+}
+.covers-2{
+    background: url("img/cover-2.jpg") no-repeat center center / cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.covers-3{
+    background: url("img/cover-3.jpg") no-repeat center center / cover;
+}
+.covers-4{
+    background: url("img/cover-4.jpg") no-repeat center center / cover;
+}
+
+.category{
+    margin-top: 20px;
+    text-align: left;
+    line-height: 2px;
+}
+.name{
+    padding-top: 20px;
+    text-align: left;
+    line-height: 2px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+.covers-1:hover, .covers-2:hover, .covers-3:hover, .covers-4:hover {
+    border: 5px solid #545353;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 1062px){
+    .covers-grid{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media only screen and (max-width: 750px){
+    .covers-grid{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media only screen and (max-width: 587px){
+    .covers-grid{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+/* ==================================== LIVE SECTION =====================================*/
+.live-section{
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+}
+.live-section h2{
+    font-size: 12px;
+    color: #14a33a;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+.live-section h3{
+    text-transform: capitalize;
+    font-size: 40px;
+    padding: 10px 10px;
+}
+.live-section p{
+    font-size: 13px;
+    padding: 10px 10px;
+}
+.live-section button{
+    width: 250px;
+    padding: 10px 10px;
+    background: #14a33a;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.live-section small{
+    font-size: 8px;
+}
+.live-section a{
+    color: #fff;
+}
+.live-section a i{
+    padding-left: 5px;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 700px){
+    .live-section{
+        height: auto;
+    }
+}
+
+/* =================================== LIVE SPORTS ===========================================*/
+.live_sections{
+    width: 100%;
+    height: 100vh;
+    background: url("img/live-sports.jpg") no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+}
+.live-content{
+    width: 50%;
+    margin: 20px 80px;
+}
+.live-links ul{
+    display: flex;
+    gap: 20px;
+}
+.live-links ul li{
+    list-style-type: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: .6;
+}
+.live-links .active{
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+}
+.live-links .active:hover{
+    opacity: .6;
+}
+.live-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 0px;
+}
+.live-content h2{
+    padding: 10px 0px;
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.live-content p{
+    font-size: 15px;
+    color: #fff;
+}
+.sports-logo{
+    display: flex;
+    gap: 20px;
+    margin: 20px 10px;
+    align-items: center;
+}
+.sports{
+    background: #fff;
+    border-radius: 50%;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sports-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 700px){
+    .live_sections{
+        width: 100%;
+        height: 100vh;
+        background: url("img/live-sports-small.jpg") no-repeat center center / cover;
+        text-align: center;
+    }
+    .live-content{
+        margin-top: 20px;
+        margin: auto;
+    }
+    .live-links ul li{
+        font-size: 10px;
+    }
+    .live-content h2{
+        font-size: 30px;
+    }
+    .sports-logo{
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .live_sections{
+        width: 100%;
+        height: 100vh;
+        background: url("img/live-sports-small.jpg") no-repeat center center / cover;
+        text-align: center;
+    }
+    .sports{
+        background: #fff;
+        border-radius: 50%;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sports-logo img{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+/* ===================================== SUBSCRIPTION PLANS ========================================*/
+.plans{
+    width: 100%;
+    margin-top: 70px;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.plans-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin: 10px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.plans-container h2{
+    font-size: 40px;
+    padding: 10px 10px;
+}
+.plans-container .bold{
+    font-weight: bold;
+}
+.btn-container{
+    margin: 30px auto;
+    border: none;
+    background: #c4c2c2;
+    width: 250px;
+    border-radius: 20px;
+}
+.btn-container button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+}
+.light-btn{
+    background: transparent;
+    border: none;
+}
+.plans-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.plans-box img{
+    width: 150px;
+}
+.plans-box h3{
+    font-size: 10px;
+    padding: 5px 10px;
+}
+.plans-box p{
+    font-size: 15px;
+    padding: 5px 5px;
+}
+.plans-box button{
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.plans-box .small-btn{
+    padding: 5px 5px;
+    width: 100px;
+    font-size: 10px;
+    background: #14a33a;
+    text-align: center;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 700px){
+    .plans-box button{
+        width: 100px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+    }
+    .plans-box img{
+        width: 100px;
+    }
+}
+
+/* ======================= FOOTER STYLES =============================*/
+footer{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.divider{
+    background: #fff;
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    opacity: .7;
+}
+.socials .bi{
+    gap: 20px;
+    font-size: 15px;
+    margin: 10px 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+footer p{
+    padding-top: 10px 0px;
+    font-size: 12px;
+}
